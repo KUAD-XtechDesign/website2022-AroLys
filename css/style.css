@@ -120,7 +120,7 @@ header .inner {
   position: absolute;
   width: 100%;
   height: 10px;
-  background-color: #ccc;
+  background-color: #5193bb;
 }
 
 #menu_btn{
@@ -169,7 +169,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 
@@ -199,7 +199,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   height: 500px;
   color: #fff;
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
+  background-image: url(/images/IMG_1097_2.jpg);/* 背景画像 */
   background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
@@ -218,8 +218,11 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   display: flex;
 }
 
-.each_link .link_pic{
-  width: 200px;
+.each_link .link_pic img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .each_link .link_txt{
@@ -239,7 +242,7 @@ a.link_btn{
   font-weight: bold;
   display: block;
   margin: 30px 0;
-  border: 2px solid #666;
+  border: 2px solid #999;
   padding: 5px;
   text-align: center;
   border-radius: 50px;
@@ -261,6 +264,7 @@ worksページ
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  margin-bottom: 20px;
 }
 
 .thumb_list li {
@@ -282,7 +286,7 @@ worksページ
 
 .thumb_list li a {
   display: block;
-  height: 120px;
+  width: 220px;
   border: 1px solid #ccc;
   opacity: 1;
   overflow: hidden;/* はみ出た部分は隠す */
@@ -290,8 +294,7 @@ worksページ
 
 .thumb_list li a img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 220px;
   object-fit: cover;
   object-position: center center;
   
@@ -317,6 +320,10 @@ reportページ
   justify-content: center;
   color: #fff;
   font-weight: bold;
+}
+
+.contents p{
+  padding: 10px 0;
 }
 
 .report {
@@ -348,7 +355,7 @@ reportページ
 .report h1 {
   margin-bottom: 20px;
   padding-left: 10px;
-  border-left: 5px solid #ff9a02;
+  border-left: 5px solid #5193bb;
 }
 
 .ex_link {
@@ -381,10 +388,32 @@ profileページ
   width: 100%;
   height: 300px;
   overflow: auto;
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .profile_container h3{
   margin-right: 30px;
+}
+
+.contents h2{
+  position: relative;
+  padding: 25px 0 8px 0;
+  margin-bottom: 20px;
+}
+
+.contents h2:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: '';
+  background-image: -webkit-repeating-linear-gradient(135deg, #5193bb, #5193bb 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #5193bb, #5193bb 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 
@@ -394,4 +423,8 @@ profileページ
 ======================================================*/
 .mb_m {
   margin-bottom: 20px;
+}
+
+.space{
+  margin-bottom: 30px;
 }
